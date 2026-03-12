@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharath | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    min-height:100vh;
+}
+
+
+.sidebar{
+    background:#020617;
+    padding:20px;
+    text-align:center;
+}
+
+.sidebar img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+}
+
+.sidebar h2{
+    margin-top:10px;
+}
+
+.sidebar p{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+.menu{
+    margin-top:25px;
+}
+
+.menu a{
+    display:block;
+    padding:10px;
+    margin:6px 0;
+    text-decoration:none;
+    color:white;
+    border-radius:6px;
+}
+
+.menu a:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+
+.main{
+    padding:25px;
+}
+
+.section{
+    background:#020617;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.section h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+
+.about-grid{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #38bdf8;
+    padding:10px;
+    text-align:center;
+}
+
+
+.skill-card{
+    background: linear-gradient(135deg, #020617, #0f172a);
+    padding:14px;
+    border-radius:10px;
+    text-align:center;
+    cursor:pointer;
+    border:1px solid #38bdf8;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.skill-card:hover{
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color:black;
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(56,189,248,0.5);
+}
+
+/* Anchor styling inside cards */
+.skill-card a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.skill-card:hover a{
+    color:black;
+}
+
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+
+.project{
+    background:#0f172a;
+    padding:12px;
+    border-radius:8px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
+
+footer{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+    <img src="lord shiv.jpeg">
+    <h2>Sharath Rayanolla</h2>
+    <p>CSE Student | Aziznagar | 2025–2029</p>
+
+    <div class="menu">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+<div class="main">
+
+    <div class="section" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a Computer Science student passionate about Web Development and Programming.
+                    I enjoy building interactive websites and learning new technologies.
+                    My goal is to become a skilled software engineer and contribute to impactful projects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>KLU University</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Narayana Junior College</td>
+                <td>981 / 1000</td>
+            </tr>
+            <tr>
+                <td>10th Class</td>
+                <td>Raus High School</td>
+                <td>9.0 CGPA</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section" id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <a href="/html files/allhtmlfiles.html" target="_blank"> HTML</a>
+            </div>
+             <div class="skill-card">
+                <a href="/js files/allfilesjs.html" target="_blank"> JS</a>
+            </div>
+            <div class="skill-card">
+                <a href="/allfiles/allfiles.html" target="_blank"> All PROJECTS</a>
+            </div>
+            <div class="skill-card" onclick="openSkill('css/index.html')">CSS</div>
+            <div class="skill-card" onclick="openSkill('js/index.html')">JavaScript</div>
+            <div class="skill-card" onclick="openSkill('java/index.html')">Java</div>
+            <div class="skill-card" onclick="openSkill('python/index.html')">Python</div>
+
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+            <div>📧 123@gmail.com</div>
+            <div>📞 +91 9177495112</div>
+            <div>📍 Hyderabad, India</div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Sharath Rayanolla | Portfolio
+    </footer>
+
+</div>
+</div>
+
+<script>
+function openSkill(path){
+    window.open(path, "_blank");
+}
+</script>
+
+</body>
+</html>
