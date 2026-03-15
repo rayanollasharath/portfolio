@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Dashboard</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 650px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+            backdrop-filter: blur(8px);
+        }
+
+        h2{
+            text-align: center;
+            color: #fff;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .links{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .links a{
+            text-decoration: none;
+            padding: 14px 16px;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+            transition: 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+
+        .links a:hover{
+            transform: translateY(-5px) scale(1.04);
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+        }
+
+        @media(max-width:500px){
+            h2{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>🚀 My Project Dashboard</h2>
+
+        <div class="links">
+            <a href="/portfolio" target="_blank">Portfolio</a>
+            <a href="/thalli/index.html" target="_blank">Thalli</a>
+            <a href="/addmission.html/index.html" target="_blank">Admission</a>
+            <a href="/colspan/index.html" target="_blank">Colspan</a>
+            <a href="/mediaquerry/media.html" target="_blank">Media Query</a>
+            <a href="/motivational card/index.html" target="_blank">Motivational Card</a>
+            <a href="/nav-project/index.html" target="_blank">Navigation Project</a>
+            <a href="/passport.applicartion/index.html" target="_blank">Passport Application</a>
+            <a href="/rowspan/index.html" target="_blank">Rowspan</a>
+            <a href="/time table/index.html" target="_blank">Time Table</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

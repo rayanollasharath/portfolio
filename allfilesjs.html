@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Projects Dashboard</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            background: linear-gradient(135deg, #232526, #414345);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: rgba(255,255,255,0.12);
+            padding: 30px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+            backdrop-filter: blur(8px);
+        }
+
+        h2{
+            text-align: center;
+            color: #fff;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .links{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .links a{
+            text-decoration: none;
+            padding: 14px 16px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #fff;
+            transition: 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+
+        .links a:hover{
+            transform: translateY(-5px) scale(1.05);
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: #000;
+            box-shadow: 0 10px 22px rgba(0,0,0,0.45);
+        }
+
+        @media(max-width:500px){
+            h2{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>⚡ JavaScript Projects</h2>
+
+        <div class="links">
+            <a href="/js/index.html" target="_blank">JS Index</a>
+            <a href="/age predictor/index.html" target="_blank">Age Predictor</a>
+            <a href="/bootstrap/bootstrap.html" target="_blank">Bootstrap</a>
+            <a href="/calculator/index.html" target="_blank">Calculator</a>
+            <a href="/colourchange/index.html" target="_blank">Colour Change</a>
+            <a href="/js/index.html" target="_blank">JS</a>
+            <a href="/js2/index.html" target="_blank">JS 2</a>
+            <a href="/SIC/index.html" target="_blank">Simple Interest</a>
+            <a href="/toss game/index.html" target="_blank">Toss Game</a>
+            <a href="/YUU/overflow.html" target="_blank">Overflow</a>
+            <a href="/zoominzoomout/index.html" target="_blank">Zoom In / Out</a>
+            <a href="/cart/jscart.html" target="_blank">Cart App</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
